@@ -1,0 +1,209 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), local('Ubuntu-Regular'), url('fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+
+html {
+    background: #342113;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#443123), to(#241103)) fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+body {
+    min-height: 100%;
+    font: normal 0.9em/1.4 Ubuntu, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+}
+
+body, a {
+    color: #333;
+}
+
+#header {
+    overflow: hidden;
+    padding-top: 4em;
+}
+
+#header h2,
+#main-navigation ul,
+#main-navigation ul li {
+    float: left;
+}
+
+#header h1 {
+    position: absolute;
+    left: -999em;
+}
+
+#header h2 {
+    line-height: 2em;
+    height: 2em;
+    padding: 0 0 0 2em;
+}
+
+#header h2 a {
+    display: block;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: #FFFCF1;
+    text-decoration: none;
+}
+
+#main-navigation p {
+    float: right;
+    margin-right: 2.5em;
+    font-size: 0.8em;
+    height: 2.5em;
+    line-height: 2em;
+}
+
+#main-navigation p,
+#main-navigation p a {
+    color: #988565;
+}
+
+#main-navigation ul {
+    margin-left: 2em;
+}
+
+#main-navigation li {
+    margin-right: 0.5em;
+}
+
+#main-navigation li a {
+    display: block;
+    line-height: 1em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #78644B;
+    background: -webkit-gradient(linear, 0 85%, 0 100%, from(#78644B), to(#48341B));
+    -webkit-border-top-left-radius: 0.25em;
+    -webkit-border-top-right-radius: 0.25em;
+}
+
+#main-navigation li.selected a,
+#main-navigation li.selected a:hover {
+    background: #C2C3A4;
+    background: -webkit-gradient(linear, 0 0, 0 10, from(#F2F3D4), to(#C2C3A4));
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+#main-navigation li a:hover {
+    background: #988565;
+    background: -webkit-gradient(linear, 0 85%, 0 100%, from(#988565), to(#685535));
+}
+
+#content {
+    background: #FFFCF1;
+    min-height: 100px;
+    padding: 0 1.6em 1.6em;
+    -webkit-border-top-left-radius: 0.4em;
+    -webkit-border-top-right-radius: 0.4em;
+    font-size: 1.25em;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+#content header {
+    background: #C2C3A4;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#C2C3A4), to(#929374));
+    padding: 0.8em 1.6em;
+    margin: 0 -1.6em 1.6em -1.6em;
+    border-bottom: solid 1px #382C2C;
+    -webkit-border-top-left-radius: 0.5em;
+    -webkit-border-top-right-radius: 0.5em;
+}
+
+#content header h1 {
+    font-size: 1.35em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+
+#content p {
+    margin: 1.6em 0 0;
+}
+
+#footer {
+    font-size: 0.8em;
+    margin: 0 2.5em;
+    padding: 1.5em 0;
+    text-align: right;
+}
+
+#footer,
+#footer a {
+    color: #988565;
+}
+
+/* ===[ Forms ]=== */
+
+form fieldset {
+    position: relative;
+    padding: 1em 2em 2em; 
+    margin: 1em 0 0; 
+    background: #FFF;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+form.small {
+    width: 25em;
+}
+
+form.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===[ Forms ]=== */
+
+form p {
+    overflow: hidden;
+}
+
+form p label {
+    width: 30%;
+    height: 2em;
+    line-height: 2em;
+    display: block;
+    float: left;
+}
+
+form p label:after {
+    content: ":";
+}
+
+form p input.text {
+    font: inherit;
+    width: 65%;
+    float: right;
+}
+
+form p button {
+    cursor: pointer;
+    font: inherit;
+    float: right;
+    font-size: 0.8em;
+    background: #D4D5DA;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFCF1), to(#D4D5DA));
+    -webkit-border-radius: 0.25em;
+    padding: 0.25em 1em;
+    border: solid 1px #78644B;
+}
